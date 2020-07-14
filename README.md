@@ -1,3 +1,4 @@
+# Installing Digital Slide Archive
 ```
 $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -16,4 +17,14 @@ $ ssh cwlab913@localhost -p 518
 $ git clone https://github.com/DigitalSlideArchive/digital_slide_archive.git
 $ cd digital_slide_archive/ansible
 $ python2 deploy_docker.py start
+```
+# Choose Another Directory for Mongo
+```
+$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal
+$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal/girder_db
+$ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
+$ sudo chmod g+s /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
+$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
+$ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore
+$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/girderAssetStore
 ```
