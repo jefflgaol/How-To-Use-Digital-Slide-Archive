@@ -1,3 +1,4 @@
+```
 $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 $ sudo apt-get update
@@ -15,3 +16,4 @@ $ ssh cwlab913@localhost -p 518
 $ git clone https://github.com/DigitalSlideArchive/digital_slide_archive.git
 $ cd digital_slide_archive/ansible
 $ python2 deploy_docker.py start
+```
