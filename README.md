@@ -33,7 +33,8 @@ $ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/gi
 ```
 $ python2 deploy_docker.py start --db=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal/girder_db --assetstore=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/girderAssetStore --logs=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData/logs
 ```
-# Stop Server
+# Stop and Remove Server
 ```
 $ python2 deploy_docker.py stop
+$ python2 deploy_docker.py rm
 ```
