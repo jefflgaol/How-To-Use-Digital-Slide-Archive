@@ -16,15 +16,24 @@ $ sudo nano /etc/ssh/sshd_config # check port
 $ ssh cwlab913@localhost -p 518
 $ git clone https://github.com/DigitalSlideArchive/digital_slide_archive.git
 $ cd digital_slide_archive/ansible
-$ python2 deploy_docker.py start
 ```
 # Choose Another Directory for Mongo
 ```
+$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal
 $ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal
 $ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal/girder_db
 $ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
 $ sudo chmod g+s /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
 $ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
 $ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore
-$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/girderAssetStore
+$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore
+$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/girderAssetStore
+```
+# Start Server
+```
+$ python2 deploy_docker.py start --db=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal/girder_db --assetstore=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/girderAssetStore --logs=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData/logs
+```
+# Stop Server
+```
+$ python2 deploy_docker.py stop
 ```
