@@ -38,3 +38,7 @@ $ python2 deploy_docker.py start --db=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0
 $ python2 deploy_docker.py stop
 $ python2 deploy_docker.py rm
 ```
+# Accessing Image Tile Prerequisite
+```
+$ python2 -m pip install girder-client
+```
