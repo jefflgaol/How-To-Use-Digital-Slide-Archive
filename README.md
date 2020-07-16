@@ -19,19 +19,19 @@ $ cd digital_slide_archive/ansible
 ```
 # Choose Another Directory for Mongo
 ```
-$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal
-$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal
-$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal/girder_db
-$ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
-$ sudo chmod g+s /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
-$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData
-$ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore
-$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore
-$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/girderAssetStore
+$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/MongoLocal
+$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/MongoLocal
+$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/MongoLocal/girder_db
+$ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/HistomicsData
+$ sudo chmod g+s /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/HistomicsData
+$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/HistomicsData
+$ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetstore
+$ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetstore
+$ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetstore/girderAssetStore
 ```
 # Start Server
 ```
-$ python3 deploy_docker.py start --db=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/MongoLocal/girder_db --assetstore=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/LocalAssetstore/girderAssetStore --logs=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f81/HistomicsData/logs
+$ python3 deploy_docker.py start --db=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/MongoLocal/girder_db --assetstore=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetstore/girderAssetStore --logs=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/HistomicsData/logs
 ```
 # Stop and Remove Server
 ```
