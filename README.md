@@ -4,8 +4,8 @@ $ sudo apt-get install apt-transport-https ca-certificates curl software-propert
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 $ sudo apt-get update
 $ sudo apt-get install docker-ce
-$ sudo apt-get install python-pip
-$ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+$ sudo apt-get install python3-pip
+$ sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
 $ python3 -m pip install docker-py ansible --user
 $ sudo groupadd docker
 $ sudo gpasswd -a $USER docker
