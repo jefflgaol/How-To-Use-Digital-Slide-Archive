@@ -42,3 +42,7 @@ $ python3 deploy_docker.py rm
 ```
 $ python3 -m pip install girder-client
 ```
+# Remove All Docker
+```
+$ sudo docker system prune -a --volumes
+```
