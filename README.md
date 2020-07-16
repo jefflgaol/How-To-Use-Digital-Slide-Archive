@@ -40,5 +40,5 @@ $ python3 deploy_docker.py rm
 ```
 # Accessing Image Tile Prerequisite
 ```
-$ python2 -m pip install girder-client
+$ python3 -m pip install girder-client
 ```
