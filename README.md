@@ -29,6 +29,11 @@ $ sudo mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetsto
 $ sudo chown cwlab913 /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetstore
 $ mkdir /media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetstore/girderAssetStore
 ```
+# Increase Permission for Docker Socket
+```
+$ cd /var/run
+$ sudo chwon cwlab913@cwlab913 docker.sock
+```
 # Start Server
 ```
 $ python3 deploy_docker.py start --db=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/MongoLocal/girder_db --assetstore=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/LocalAssetstore/girderAssetStore --logs=/media/cwlab913/55cd4b0f-9a55-4122-86c5-a0d0f3ac95f82/HistomicsData/logs
